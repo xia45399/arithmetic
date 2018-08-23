@@ -4,7 +4,7 @@
 public class Sort2 {
     public static void main(String[] args) {
 //        int[] arr = {34, 223, 52, 7, 256, 1, 67, 8, 123, 200, 65, 8, 93, 12, 4645, 7, 568, 56};
-        int[] arr = {5,2,8,4,9,1};
+        int[] arr = {5, 2, 8, 4, 9, 1};
         sort(arr);
     }
 
@@ -18,18 +18,15 @@ public class Sort2 {
                 }
             }
             //找到最小数的下标，交换 a[i]和该数位置
-            int tem=arr[minInex];
-            arr[minInex]=arr[i];
-            arr[i]=tem;
+            int tem = arr[minInex];
+            arr[minInex] = arr[i];
+            arr[i] = tem;
             print(arr);
         }
     }
 
     private static void print(int[] arr) {
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        Print.printArr(arr);
     }
 
 }

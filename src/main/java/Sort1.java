@@ -6,7 +6,8 @@ public class Sort1 {
         int[] arr = {34, 223, 52, 7, 256, 1, 67, 8, 123, 200, 65, 8, 93, 12, 4645, 7, 568, 56};
         sort(arr);
     }
-    private static void sort(int arr[]){
+
+    private static void sort(int arr[]) {
         for (int end = arr.length - 1; end > 0; end--) {
             for (int i = 0; i < end; i++) {
                 if (arr[i] < arr[i + 1]) {
@@ -20,9 +21,6 @@ public class Sort1 {
     }
 
     private static void print(int[] arr) {
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+        Print.printArr(arr);
     }
 }
