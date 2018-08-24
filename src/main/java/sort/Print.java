@@ -1,3 +1,5 @@
+package sort;
+
 public class Print {
     public static void printArr(int[] arr) {
         for (int i : arr) {
