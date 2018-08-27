@@ -39,12 +39,12 @@ public class Problem19 {
 
         ListNode ans = removeNthFromEnd(head, 5);
         ans.print();
-        ans = removeNthFromEnd(head, 2);
-        ans.print();
+//        ans = removeNthFromEnd(head, 2);
+//        ans.print();
         // TODO: 2018/8/27 一次便利
     }
 
-    private static ListNode removeNthFromEnd(ListNode head, int n) {
+    private static ListNode removeNthFromEnd1(ListNode head, int n) {
         ListNode c = head;
         int size = 0;
         while (c != null) {
@@ -67,5 +67,30 @@ public class Problem19 {
             }
         }
         return head;
+    }
+
+    private static ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode myHead = new ListNode(0);
+        myHead.next = head;
+
+        int cunN = 0;
+        ListNode delPre = myHead;
+        while (head != null) {
+            if (cunN < n) {
+                cunN++;
+            }
+            if ((cunN == n)) {
+                //如果到结尾，答案就是删除当前
+                if (head.next == null) {
+                    delPre.next = delPre.next.next;
+                    break;
+                } else {
+                    delPre = delPre.next;
+                }
+            }
+            head = head.next;
+        }
+
+        return myHead.next;
     }
 }
