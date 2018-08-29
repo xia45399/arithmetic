@@ -1,5 +1,7 @@
 package leetcode.medium;
 
+import leetcode.bean.ListNode;
+
 /**
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
  * <p>
@@ -11,24 +13,8 @@ package leetcode.medium;
  * 说明：
  * <p>
  * 给定的 n 保证是有效的。
- * TODO: 2018/8/27 进阶： 你能尝试使用一趟扫描实现吗？
  */
 public class Problem19 {
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        void print() {
-            System.out.println(val);
-            if (next != null) {
-                next.print();
-            }
-        }
-    }
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -41,7 +27,6 @@ public class Problem19 {
         ans.print();
 //        ans = removeNthFromEnd(head, 2);
 //        ans.print();
-        // TODO: 2018/8/27 一次便利
     }
 
     private static ListNode removeNthFromEnd1(ListNode head, int n) {

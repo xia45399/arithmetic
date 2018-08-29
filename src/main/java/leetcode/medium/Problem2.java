@@ -1,17 +1,10 @@
 package leetcode.medium;
 
-public class Problem2 {
-    public static class ListNode {
-        int val;
-        ListNode next;
+import leetcode.bean.ListNode;
 
-        ListNode(int x) {
-            val = x;
-        }
-    }
+public class Problem2 {
 
     public static void main(String[] args) {
-
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
