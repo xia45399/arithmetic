@@ -1,9 +1,14 @@
 package sort;
 
 /**
- * 2 选择排序
+ * 快速排序
+ * 稳定: 否
+ * 时间复杂度:
+ * 最优时间: O(nlog(n))
+ * 最坏时间: O(n^2)
+ * 平均时间: O(nlog(n))
  */
-public class Sort3 {
+public class quickSort {
     public static void main(String[] args) {
         int[] arr = {34, 223, 52, 7, 256, 1, 67, 8, 123, 200, 65, 8, 93, 12, 4645, 7, 568, 56};
 //        int[] arr = {5, 6, 7, 8, 9, 1};
