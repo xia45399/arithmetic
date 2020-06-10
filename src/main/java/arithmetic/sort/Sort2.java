@@ -23,12 +23,8 @@ public class Sort2 {
             int tem = arr[minInex];
             arr[minInex] = arr[i];
             arr[i] = tem;
-            print(arr);
+            ArraysUtils.printArr(arr);
         }
-    }
-
-    private static void print(int[] arr) {
-        Print.printArr(arr);
     }
 
 }

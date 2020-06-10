@@ -18,7 +18,7 @@ public class quickSort {
 
     private static void sort(int arr[]) {
         quickSort(0, arr.length - 1, arr);
-        print(arr);
+        ArraysUtils.printArr(arr);
     }
 
     private static void quickSort(int start, int end, int[] arr) {
@@ -49,7 +49,4 @@ public class quickSort {
         arr[j] = tem;
     }
 
-    private static void print(int[] arr) {
-        Print.printArr(arr);
-    }
 }

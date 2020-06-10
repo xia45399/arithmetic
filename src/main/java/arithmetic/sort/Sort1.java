@@ -18,11 +18,8 @@ public class Sort1 {
                     arr[i + 1] = tem;
                 }
             }
-            print(arr);
+            ArraysUtils.printArr(arr);
         }
     }
 
-    private static void print(int[] arr) {
-        Print.printArr(arr);
-    }
 }

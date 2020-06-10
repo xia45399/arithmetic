@@ -19,7 +19,7 @@ public class HeapSort {
         //2.调整堆结构+交换堆顶元素与末尾元素
         for (int j = len - 1; j > 0; j--) {
             //将堆顶元素与末尾元素进行交换
-            swap(arr, 0, j);
+            ArraysUtils.swap(arr, 0, j);
             //重新对堆进行调整
             adjustHeap(arr, 0, j);
         }
@@ -50,12 +50,4 @@ public class HeapSort {
         arr[i] = temp;
     }
 
-    /**
-     * 交换元素
-     */
-    private static void swap(int[] arr, int a, int b) {
-        int temp = arr[a];
-        arr[a] = arr[b];
-        arr[b] = temp;
-    }
 }
