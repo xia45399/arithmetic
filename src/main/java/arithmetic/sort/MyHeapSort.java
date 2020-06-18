@@ -5,8 +5,10 @@ package arithmetic.sort;
  */
 public class MyHeapSort {
     public static void main(String[] args) {
-        int[] arr = new int[]{0, 20, 30, 90, 11, 40, 0, 70, 110, 12, 60, 10, 100, 50, 80};
+//        int[] arr = new int[]{0, 20, 30, 90, 11, 40, 0, 70, 110, 12, 60, 10, 100, 50, 80};
+        int[] arr = new int[]{4, 6, 8, 5, 9};
         sort(arr);
+        Print.printArr(arr);
     }
 
     /**
@@ -36,7 +38,7 @@ public class MyHeapSort {
      */
     private static void adjust(int[] arr, int startIndex, int endIndex) {
         int left = 2 * startIndex + 1;
-        if (left >= endIndex) {
+        if (left > endIndex) {
             return;
         }
         int maxIndex = left;

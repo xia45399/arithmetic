@@ -15,7 +15,7 @@ public class CreateNumFile {
     public static void main(String[] args) throws IOException {
         String fileName = "1.txt";
         long t1 = System.currentTimeMillis();
-        createNumFile(fileName, 500000000);
+        createNumFile(fileName, 5000);
         long t2 = System.currentTimeMillis();
         System.out.println("耗时" + (t2 - t1) + "ms");
     }
